@@ -1,2 +1,2 @@
 # DTLN-pytorch-base
-Rewrite DTLN tensorflow version with torch methods.
+Rewrite tensorflow version DTLN from https://github.com/breizhn/DTLN.git with torch methods.
