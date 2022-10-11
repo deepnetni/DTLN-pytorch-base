@@ -148,7 +148,7 @@ class DTLNNet(nn.Module):
 
     def forward(self, x):
         mag, phi = self.stft(x)
-        # transfer to (N, F, L)
+        # transfer to (N, Frames, L)
         mag = mag.permute(0, 2, 1)
         phi = phi.permute(0, 2, 1)
 

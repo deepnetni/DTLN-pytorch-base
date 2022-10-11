@@ -351,8 +351,7 @@ if __name__ == "__main__":
     test_hdd_dir = "F:\\dataset\\val_clean"
     model = Model(epoches=10, batch_sz=64, n_frame=256, n_hop=128)
     #model.train(mix_dir, sph_dir, val_mix_dir, val_sph_dir)
-    #model.train_with_dataset(mix_dir, sph_dir, val_mix_dir, val_sph_dir)
-    #model.train(test_hdd_dir, test_hdd_dir, test_hdd_dir, test_hdd_dir)
+    model.train_with_dataset(mix_dir, sph_dir, val_mix_dir, val_sph_dir)
 
-    test_dir = "E:\\datasets\\DNS-Challenge\\datasets\\test_set\\real_recordings"
-    model.test(test_dir)
+    #test_dir = "E:\\datasets\\DNS-Challenge\\datasets\\test_set\\real_recordings"
+    #model.test(test_dir)
